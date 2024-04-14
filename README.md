@@ -66,3 +66,4 @@ FUNCTIONALITY
 
 ## Contact
 - Project Repository: [[GitHub Repo Link](https://github.com/DottyV/Health-and-Fitness-Club-Management-System)]
+- Video link: 
