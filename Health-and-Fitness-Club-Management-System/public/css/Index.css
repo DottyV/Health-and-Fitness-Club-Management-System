@@ -1,0 +1,19 @@
+/* Index.css */
+body#body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+div {
+    background: white;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+}

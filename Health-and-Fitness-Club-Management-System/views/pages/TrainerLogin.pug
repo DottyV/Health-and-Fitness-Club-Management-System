@@ -1,0 +1,12 @@
+html
+	head
+		title Trainer Login
+		link(rel='stylesheet', href='/css/Login.css')
+	body(onload='trainerlogininit()')
+		include ../partials/header 
+		div#form(class='form')
+			input(id="username-input" class="form-input" type="text" name="name" placeholder="Enter your Username...")
+			input(id="password-input" class="form-input" type="text" name="pass" placeholder="Enter your Password...")
+			br
+			button#TrainerLogin LOGIN
+		script(src="client.js") 

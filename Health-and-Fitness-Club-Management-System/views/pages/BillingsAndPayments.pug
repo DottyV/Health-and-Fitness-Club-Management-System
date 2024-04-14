@@ -1,0 +1,29 @@
+html
+    head
+        title#Billing and Payments
+        link(rel='stylesheet', href='/css/BillingsAndPayments.css')
+    body(onload='initBillingsAndPayments()')
+        include ../partials/header 
+
+        h1 Billing and Payment Details
+        div#form(class='form')
+            // Displaying billing information
+            if member
+                p Welcome, #{member.first_name} #{member.last_name}
+                p Email: #{member.email}
+                p Phone: #{member.phone_num}
+                p Address: #{member.home_addr}
+            else
+                p Update billing information.
+
+            // Payment form
+            form(action="javascript:void(0);", method="post")
+                input#billingAddress(type="text" placeholder="Billing Address" required)
+                input#cardNumber(type="text" placeholder="Card Number" required pattern="[0-9]{16}")
+                input#cardExpiry(type="text" placeholder="Expiration Date (MM/YYYY)" required)
+                input#cardCvv(type="text" placeholder="CVV" required pattern="[0-9]{3,4}")
+                button(onclick="saveBillingInfo()") Save Billing Info
+
+
+
+        script(src="client.js")

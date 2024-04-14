@@ -1,0 +1,31 @@
+/* MemberRegister.css */
+.form {
+    max-width: 400px;
+    background: #fff;
+    padding: 80px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button#memberregister {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#memberregister:hover {
+    background-color: #45a049;
+}

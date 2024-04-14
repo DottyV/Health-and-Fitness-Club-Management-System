@@ -1,0 +1,24 @@
+html
+	head
+		title#title All trainers
+		link(rel='stylesheet', href='/css/Trainers.css')
+	body(onload='trainerregisterinit()')
+		include ../partials/header
+		h4 ALL TRAINERS
+		for each in trainers
+			p #{each.first_name} #{each.last_name} - Email: #{each.email}, Phone: #{each.phone_num}
+		br
+		h4 CREATE NEW TRAINER
+		div#form(class='form')
+			input(id="newusername" class="form-input" type="text" name="username" placeholder="Enter a Username...")
+			input(id="newpassword" class="form-input" type="text" name="pass" placeholder="Enter a Password...")
+			input(id="newfirst" class="form-input" type="text" name="name" placeholder="First Name...")
+			input(id="newlast" class="form-input" type="text" name="name" placeholder="Last Name...")
+			input(id="newemail" class="form-input" type="text" name="name" placeholder="Email...")
+			input(id="newnumber" class="form-input" type="text" name="name" placeholder="Phone Number...")
+			input(id="newsex" class="form-input" type="text" name="name" placeholder="Sex...")
+			input(id="newdob" class="form-input" type="text" name="name" placeholder="Date of Birth...")
+			input(id="newaddress" class="form-input" type="text" name="name" placeholder="Home Address...")
+			br
+			button#TrainerRegister ADD NEW
+		script(src="client.js") 

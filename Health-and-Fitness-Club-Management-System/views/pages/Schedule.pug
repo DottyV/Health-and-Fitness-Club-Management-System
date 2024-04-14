@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title Trainers' Schedules
+        link(rel='stylesheet', href='/css/Schedule.css')
+    body
+        h1 Trainers' Schedules
+        if schedules.length
+            ul
+                each schedule in schedules
+                    li
+                        h2 #{schedule.first_name} #{schedule.last_name}'s Schedule
+                        p Date: #{schedule.available_date}
+                        p Time: #{schedule.start_time} to #{schedule.end_time}
+        else
+            p No schedules found.

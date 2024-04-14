@@ -1,0 +1,19 @@
+html
+	head
+		title Register
+		link(rel='stylesheet', href='/css/MemberRegister.css')
+	body(onload='memberregisterinit()')
+		include ../partials/header 
+		div#form(class='form')
+			input(id="newusername" class="form-input" type="text" name="username" placeholder="Enter a Username...")
+			input(id="newpassword" class="form-input" type="text" name="pass" placeholder="Enter a Password...")
+			input(id="newfirst" class="form-input" type="text" name="name" placeholder="First Name...")
+			input(id="newlast" class="form-input" type="text" name="name" placeholder="Last Name...")
+			input(id="newemail" class="form-input" type="text" name="name" placeholder="Email...")
+			input(id="newnumber" class="form-input" type="text" name="name" placeholder="Phone Number...")
+			input(id="newsex" class="form-input" type="text" name="name" placeholder="Sex...")
+			input(id="newdob" class="form-input" type="text" name="name" placeholder="Date of Birth...")
+			input(id="newaddress" class="form-input" type="text" name="name" placeholder="Home Address...")
+			br
+			button#MemberRegister REGISTER
+		script(src="client.js") 

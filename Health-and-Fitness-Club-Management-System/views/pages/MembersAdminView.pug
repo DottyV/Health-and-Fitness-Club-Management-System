@@ -1,0 +1,13 @@
+html
+    head
+        title#title All Members
+        link(rel='stylesheet', href='/css/Members.css')
+    body(onload='memberregisterinit()')
+        include ../partials/header
+        h4 MEMBERS BILLING INFO
+        ul
+            each member in members
+                li
+                    p #{member.first_name || 'Unknown'} #{member.last_name || 'Unknown'} - Email: #{member.email || 'No email'}, Phone: #{member.phone_num || 'No phone'}, Billing Address: #{member.billing_address || 'No address'}, Card Number: #{member.card_number ? member.card_number.substring(0, 4) + '****' + member.card_number.substring(member.card_number.length - 4) : 'No card info'}, Card Expiry: #{member.card_expiry || 'No expiry'}
+            else
+                li No members found.

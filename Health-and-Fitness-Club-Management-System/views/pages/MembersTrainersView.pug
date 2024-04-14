@@ -1,0 +1,13 @@
+html
+    head
+        title#title All Members
+        link(rel='stylesheet', href='/css/Members.css')
+    body(onload='memberregisterinit()')
+        include ../partials/header
+        h4 MEMBERS INFO
+        ul
+            each member in members
+                li
+                    p #{member.first_name} #{member.last_name} - Email: #{member.email}, Phone: #{member.phone_num}
+            else
+                li No members found.

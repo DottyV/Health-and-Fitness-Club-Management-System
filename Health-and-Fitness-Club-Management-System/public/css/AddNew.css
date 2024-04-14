@@ -1,0 +1,62 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding-top: 70px; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #34495e;
+    margin: 15px 0;
+}
+
+.m_form-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #2980b9;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    transition: border-color 0.2s;
+}
+
+.m_form-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px; /* Add bottom margin to separate buttons */
+    display: block; /* Ensure buttons are block level so margin takes effect */
+    width: auto; /* Adjust width as necessary or keep it auto */
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

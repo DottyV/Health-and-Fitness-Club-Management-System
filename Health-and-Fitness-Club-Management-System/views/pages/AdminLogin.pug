@@ -1,0 +1,12 @@
+html
+	head
+		title Admin Login
+		link(rel='stylesheet', href='/css/Login.css')
+	body(onload='adminlogininit()')
+		include ../partials/header 
+		div#form(class='form')
+			input(id="username-input" class="form-input" type="text" name="name" placeholder="enter your username...")
+			input(id="password-input" class="form-input" type="text" name="pass" placeholder="enter your password...")
+			br
+			button#AdminLogin LOGIN
+		script(src="client.js") 
