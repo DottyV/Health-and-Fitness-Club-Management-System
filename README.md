@@ -65,4 +65,4 @@ FUNCTIONALITY
 - Log in as a trainer
 
 ## Contact
-- Project Repository: [GitHub Repo Link]
+- Project Repository: [[GitHub Repo Link](https://github.com/DottyV/Health-and-Fitness-Club-Management-System)]
